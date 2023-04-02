@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/browser_actions_bg_grey"
+    android:orientation="vertical"
+    tools:context=".Chat.ui.ManualPrescription">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="@dimen/_8sdp"
+        style="@style/scrollbar_shape_style"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_patient"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_50sdp"
+                   android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:src="@drawable/ic_user_profiles">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/tv_patientName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_preview"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@id/iv_patient"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:scaleType="fitXY"
+                    android:text="Amit sagar"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/tv_synptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_patientName"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_patient"
+                    android:scaleType="fitXY"
+                    android:text=""
+                    android:textColor="@color/red"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_synptoms"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <Button
+                        android:id="@+id/btn_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient"
+                        android:gravity="center_horizontal|center"
+                        android:text="Add"
+                        android:visibility="gone"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+                    <Button
+                        android:id="@+id/btn_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient"
+                        android:gravity="center_horizontal|center"
+                        android:text="Clear"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <Button
+                        android:id="@+id/btn_savesignature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:background="@drawable/gradient"
+                        android:gravity="center_horizontal|center"
+                        android:text="Save"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp"
+               android:layout_height="wrap_content">
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/imgsig"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/hrd"
+                   android:layout_margin="@dimen/_10sdp"
+                   android:visibility="gone"
+                   />
+           </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_patientName"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_patient"
+                android:scaleType="fitXY"
+                android:text=""
+                android:textColor="@color/green"
+                android:visibility="visible" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginRight="20dp"
+   android:id="@+id/signrelative"
+    android:layout_height="match_parent">
+
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        android:id="@+id/signature_pad"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_600sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:background="#BDEAFB"
+        app:penColor="@android:color/black"
+        tools:ignore="MissingConstraints" >
+    </com.github.gcacace.signaturepad.views.SignaturePad>
+
+</RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <ZoomControls
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zoomcontrol"
+        android:layout_alignParentEnd="true"
+   android:layout_marginBottom="@dimen/_13sdp"
+      android:layout_marginEnd="@dimen/_24sdp"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

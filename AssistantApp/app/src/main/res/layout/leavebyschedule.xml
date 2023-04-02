@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+        <EditText
+            android:id="@+id/dayofdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/calendar_today"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableTint="@color/light_grey"
+            android:focusable="false"
+            android:fontFamily="@font/proximanovaregular"
+            android:hint="Select Day"
+            android:paddingLeft="16.3dp"
+            android:paddingTop="9.7dp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="9.7dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_leaveday"
+        />
+
+</LinearLayout>

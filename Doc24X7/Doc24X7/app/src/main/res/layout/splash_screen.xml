@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/l1"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/t11"
+
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_50sdp"
+        android:src="@drawable/splashimg" />
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/im1"
+         android:text="Version"
+         android:visibility="invisible"
+         android:id="@+id/version"
+         android:textSize="@dimen/_15sdp"
+         android:textColor="@color/white"
+         android:gravity="center"
+         android:layout_marginTop="@dimen/_20sdp"
+         android:layout_alignParentBottom="true"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:text="Let Practo access yous location to find\n doctors nearby"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:id="@+id/t11"
+        android:layout_above="@+id/tttt"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:visibility="gone"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Location is used to improve your experience. we respect our User privacy"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp"
+        android:id="@+id/tttt"
+        android:layout_above="@+id/getStarted"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:visibility="gone"
+
+        android:id="@+id/getStarted"
+        android:layout_above="@+id/notnow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Enable Location"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:background="@color/colorPrimary"/>
+
+
+    <TextView
+        android:id="@+id/notnow"
+        android:visibility="gone"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Not now"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:padding="15dp" />
+
+
+
+
+</RelativeLayout>

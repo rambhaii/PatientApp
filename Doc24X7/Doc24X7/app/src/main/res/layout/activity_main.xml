@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:background="@color/white"
+         android:layout_height="match_parent">
+
+         <FrameLayout
+             android:id="@+id/fragment_container"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_above="@+id/navigation_li"
+             android:layout_marginBottom="@dimen/_5sdp">
+
+         </FrameLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:id="@+id/navigation_li"
+      android:layout_marginLeft="@dimen/_20sdp"
+      android:paddingTop="@dimen/_2sdp"
+      android:elevation="@dimen/_6sdp"
+      android:outlineSpotShadowColor="@color/colorPrimary"
+      android:paddingBottom="@dimen/_2sdp"
+      android:layout_marginRight="@dimen/_20sdp"
+      android:layout_marginTop="@dimen/_5sdp"
+      android:layout_marginBottom="@dimen/_8sdp"
+      android:background="@drawable/rect_newbottom"
+      android:layout_alignParentBottom="true"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_weight="1"
+          android:id="@+id/home_li"
+          android:paddingStart="@dimen/_10sdp"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:layout_marginTop="@dimen/_5sdp"
+          android:layout_marginBottom="@dimen/_5sdp"
+          android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="@dimen/_12sdp"
+              android:id="@+id/home_im"
+              android:src="@drawable/ic_home_line"
+              android:layout_height="@dimen/_12sdp"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:text="Home"
+              android:id="@+id/home_tv"
+              android:textSize="@dimen/_8sdp"
+              android:layout_marginTop="@dimen/_4sdp"
+              android:textColor="@color/black"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_height="match_parent"/>
+
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_weight="1"
+          android:id="@+id/offline_li"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:layout_marginTop="@dimen/_5sdp"
+          android:layout_marginBottom="@dimen/_5sdp"
+          android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="@dimen/_12sdp"
+              android:id="@+id/offline_im"
+              android:src="@drawable/ic_user_off"
+              android:layout_height="@dimen/_12sdp"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:text="Avl Offline"
+              android:id="@+id/offline_tv"
+              android:textSize="@dimen/_8sdp"
+              android:layout_marginTop="@dimen/_4sdp"
+              android:textColor="@color/black"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_height="match_parent"/>
+
+
+
+      </LinearLayout>
+
+
+       <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_weight="1"
+           android:id="@+id/Appointmenthistory_li"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:layout_marginTop="@dimen/_5sdp"
+          android:layout_marginBottom="@dimen/_5sdp"
+          android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="@dimen/_12sdp"
+              android:src="@drawable/ic_user_on"
+              android:id="@+id/Appointmenthistory_im"
+              android:layout_height="@dimen/_12sdp"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:text="Avl Online"
+              android:id="@+id/Appointmenthistory_tv"
+              android:layout_marginTop="@dimen/_4sdp"
+              android:textColor="@color/black"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:textSize="@dimen/_8sdp"
+              android:layout_height="match_parent"/>
+
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_weight="1"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:id="@+id/Setting_li"
+          android:layout_marginTop="@dimen/_5sdp"
+          android:layout_marginBottom="@dimen/_5sdp"
+          android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="@dimen/_12sdp"
+              android:src="@drawable/ic_nut"
+              android:id="@+id/Setting_im"
+              android:layout_height="@dimen/_12sdp"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:text="Profile"
+              android:id="@+id/Setting_tv"
+              android:layout_marginTop="@dimen/_4sdp"
+              android:textColor="@color/black"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:textSize="@dimen/_8sdp"
+              android:layout_height="match_parent"/>
+
+
+      </LinearLayout>
+
+
+  </LinearLayout>
+
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+       android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigation" />
+
+</RelativeLayout>
+
+
+</LinearLayout>

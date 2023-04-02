@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/rectbacknew"
+    android:elevation="1dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/craetedate"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:fontFamily="@font/proximanovaregular"
+            android:gravity="right"
+            android:background="@drawable/rect"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/noofpatient"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/craetedate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:text=""
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/proximanovaregular"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:id="@+id/edit"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_toLeftOf="@id/remove"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_height="@dimen/_20sdp"/>
+
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_toLeftOf="@+id/checkbox"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_cancel_black_24dp" />
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@id/craetedate"
+            ></CheckBox>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

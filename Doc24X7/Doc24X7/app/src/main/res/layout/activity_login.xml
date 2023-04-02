@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/rect"
+    android:backgroundTint="@color/white"
+    tools:context=".Login.ui.LoginActivity">
+
+    <!--    android:background="@drawable/semicircle"   -->
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/goback"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:src="@drawable/rect" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/verify"
+        android:visibility="gone"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_verified_account" />
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:id="@+id/txt1"
+      android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_70sdp"
+          android:padding="10dp"
+          android:layout_marginBottom="@dimen/_20sdp"
+          android:text="Enter your mobile number"
+          android:textColor="@color/black"
+          android:textSize="14sp"  />
+
+      <TextView
+           android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+           android:layout_marginTop="@dimen/_70sdp"
+          android:padding="10dp"
+          android:layout_marginBottom="@dimen/_20sdp"
+          android:text="Help"
+          android:textAllCaps="true"
+          android:textColor="@color/colorPrimary"
+          android:textSize="14sp"  />
+
+  </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/txt1"
+        android:background="@drawable/signup_rect_neww"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_15sdp"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableTint="@color/black"
+            android:drawableRight="@drawable/ic_baseline_expand_more_24"
+            android:gravity="center"
+            android:text="+ 91 "
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <EditText
+            android:id="@+id/edMobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:maxLength="10"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/signin_rect_conti"
+        android:elevation="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        android:text="     Continue     "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+
+
+
+</RelativeLayout>

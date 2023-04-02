@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+     android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_2sdp"
+     android:elevation="1dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+             ></CheckBox>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/craetedate_li"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/checkbox"
+
+            android:orientation="vertical">
+
+            <TextView
+
+                android:visibility="visible"
+                android:maxLines="1"
+                android:id="@+id/craetedate"
+                android:text="noofpatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="13dp"/>
+
+            <View
+                android:layout_width="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@color/lohoyint"
+                android:layout_height="1px"/>
+
+           <TextView
+
+                android:visibility="visible"
+                android:maxLines="1"
+               android:id="@+id/craetedate_more"
+                android:text="noofpatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:gravity="right"
+                 android:textColor="@color/black"
+                android:textSize="13dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/noofpatient"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/craetedate_li"
+            android:layout_width="match_parent"
+             android:layout_toLeftOf="@+id/li_both"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:text="noofpatient noofpatient noofpatient noofpatient noofpatient v "
+            android:layout_marginLeft="@dimen/_10sdp"
+             android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/blackdask"
+            android:textSize="11dp"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/li_both"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:id="@+id/edit"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_toLeftOf="@id/remove"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:tint="@color/blue"
+                android:padding="@dimen/_2sdp"
+
+                android:layout_height="@dimen/_20sdp"/>
+
+            <ImageView
+                android:id="@+id/remove"
+                android:padding="@dimen/_2sdp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_toLeftOf="@+id/checkbox"
+                android:layout_centerVertical="true"
+                android:src="@drawable/deleteiiii" />
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/lohoyint"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_height="@dimen/_1sdp"/>
+
+</LinearLayout>

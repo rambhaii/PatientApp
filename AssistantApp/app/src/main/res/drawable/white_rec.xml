@@ -1,0 +1,9 @@
+<!-- res/drawable/myrect.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/white" />
+    <corners android:radius="@dimen/_22sdp" />
+    <!--<stroke android:width="@dimen/_2sdp" android:color="#ffa6c575" />-->
+    <stroke android:width="@dimen/_1sdp" android:color="@color/white" />
+
+</shape>

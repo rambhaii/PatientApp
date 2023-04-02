@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/lifirst"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/rectbackgra"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:id="@+id/opImage"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@drawable/customer_support"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_28sdp"
+                        android:text="Dr. John Riley"
+                        android:id="@+id/name"
+                        android:singleLine="true"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:gravity="left"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="service_name"
+                        android:id="@+id/usermobile"
+                        android:singleLine="true"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:gravity="left"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="service_name"
+                            android:visibility="gone"
+                            android:id="@+id/qualification"
+                            android:singleLine="true"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/proximanovaregular"
+                            android:gravity="right"
+                            android:layout_marginRight="@dimen/_7sdp"
+                            android:padding="@dimen/_1sdp"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/blood_group"
+                            android:layout_alignParentRight="true"
+                            android:singleLine="true"
+                            android:layout_gravity="right"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:textColor="@color/green"
+                            android:fontFamily="@font/proximanovaregular"
+                            android:gravity="right"
+                            android:layout_marginRight="@dimen/_7sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ratingBar"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:numStars="5"
+                        android:stepSize="5"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:isIndicator="true"
+                        style="?android:attr/ratingBarStyleSmall" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/liii"
+                android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:drawableTint="@color/gray_btn_bg_color"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:maxLines="3"
+                        android:textStyle="bold"
+                        android:text="Book Date    :  "
+                        android:gravity="left"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:drawableTint="@color/gray_btn_bg_color"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:textColor="@color/back_bg"
+                        android:text="start_time"
+                        android:id="@+id/book_date"
+                        android:gravity="left"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:drawableTint="@color/gray_btn_bg_color"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:maxLines="3"
+                        android:text="Preciption    :  "
+                        android:gravity="left"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:drawableTint="@color/gray_btn_bg_color"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:textColor="@color/back_bg"
+                        android:text="start_time"
+                        android:id="@+id/Preciptiontext"
+                        android:gravity="left"
+                        android:textSize="@dimen/_12sdp" />
+
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:drawableTint="@color/gray_btn_bg_color"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:maxLines="3"
+                        android:id="@+id/Medicinennn"
+                        android:text="Medicine Name    :  "
+                        android:gravity="left"
+                        android:textSize="@dimen/_12sdp" />
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_toRightOf="@+id/Medicinennn"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                         android:id="@+id/recycler_medicine"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_width="match_parent"
+                         android:overScrollMode="never"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_13sdp"
+            android:src="@drawable/rnd_new"
+            android:id="@+id/prection_image"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

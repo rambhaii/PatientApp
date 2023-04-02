@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7EFBFBFB"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/toolbar"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+         android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:visibility="gone"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/li_rad_by_date"
+                 android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/rad_by_date"
+                     android:checked="true"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/show_date_leave"
+                    android:layout_width="wrap_content"
+                     android:textSize="@dimen/_10sdp"
+                    android:fontFamily="@font/apple_sd_gothic_neo_light"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:text="  By Date  " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/Li_rad_by_schedule"
+                 android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/rad_by_schedule"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/show_day_leave"
+                    android:layout_width="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/_2sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:fontFamily="@font/apple_sd_gothic_neo_light"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:text="  By Schedule" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+             android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_17sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/li_starttime"
+                android:layout_height="wrap_content"
+                 android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/startdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/calendar_today"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/light_grey"
+                    android:focusable="false"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:hint="Start Time"
+                    android:inputType="number"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:id="@+id/li_endtime"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/enddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/calendar_today"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/light_grey"
+                    android:focusable="false"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:hint="End Time"
+                    android:inputType="number"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  android:visibility="gone"
+                  android:id="@+id/li_spin_day"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                  <Spinner
+                      android:id="@+id/spinner_day"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+
+                       />
+
+
+
+              </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+<!--      <LinearLayout-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:orientation="vertical"-->
+<!--          >-->
+<!--          <androidx.recyclerview.widget.RecyclerView-->
+<!--              android:layout_width="match_parent"-->
+<!--              android:layout_height="wrap_content"-->
+<!--              android:id="@+id/recycleleave"-->
+<!--              />-->
+
+<!--      </LinearLayout>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

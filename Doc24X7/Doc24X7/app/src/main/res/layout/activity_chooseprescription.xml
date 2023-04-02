@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Dashbord.ui.chooseprescription">
+    <RelativeLayout
+        android:id="@+id/detailuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/_2sdp"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/piclayout"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_2sdp"
+            app:srcCompat="@drawable/operator_circle">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/userpic"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/customer_support"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_9sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/Logout"
+            android:layout_toRightOf="@+id/piclayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_28sdp"
+                android:fontFamily="serif"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="name name name name  "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="serif"
+                android:gravity="left"
+                android:text=" 85858588 "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/Logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="  Logout  "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/browser_actions_bg_grey"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/digitalprescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_centerHorizontal="true"
+            android:text=" Digital Prescription "
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/manualprescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_below="@+id/digitalprescription"
+            android:background="@drawable/gradient"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:visibility="gone"
+            android:text="Manual Prescription"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/imageprescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/digitalprescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/gradient"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="  Paper Prescription "
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+          <ImageView
+              android:padding="@dimen/_20sdp"
+              android:layout_below="@+id/imageprescription"
+              android:id="@+id/view_image"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/_200sdp"
+              android:src="@drawable/chatbanner"
+              android:visibility="gone"
+              />
+        <Button
+            android:id="@+id/uploadbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/view_image"
+            android:background="@drawable/gradient"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Upload"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

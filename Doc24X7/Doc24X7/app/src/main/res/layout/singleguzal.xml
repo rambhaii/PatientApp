@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:visibility="gone"
+            android:background="@drawable/white_circle"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/rnd_new" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectcolour"
+                android:paddingLeft="@dimen/_5sdp"
+                 android:backgroundTint="@color/white"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                     android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:gravity="left"
+                     android:textColor="@color/black" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:id="@+id/misra_li"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/rectnew">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name   :  "
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/misra"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_11sdp"
+                        android:gravity="left"
+                        android:text="Please Enter your registered er your registered  er your registered  er your registered  er your registered  er your registered User Email OR Phone"
+                        android:textColor="@color/black" />
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:id="@+id/Shayarname_li"
+                    android:background="@drawable/rectnew">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile  :   "
+                        android:textSize="@dimen/_14sdp"
+                         android:textColor="@color/black"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/Shayarname"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Please Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  oease Ent  one"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="left"
+                        android:textColor="@color/black" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:background="@drawable/rectnew">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email  :  "
+                         android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/gazal"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Please Enter your registered er your registered  er your registered  er your registered  er your registered  er your registered User Email OR Phone"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="left"
+                        android:textColor="#252525" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:background="@drawable/rectnew">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Join Date  :  "
+                         android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/join_date"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Please Enter your registered er your registered  er your registered  er your registered  er your registered  er your registered User Email OR Phone"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="left"
+                        android:textColor="#252525" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/cancelButton"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/ic_close"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

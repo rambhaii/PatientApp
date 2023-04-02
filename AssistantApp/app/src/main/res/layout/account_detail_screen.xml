@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Enter Account Detail"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/doctorRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginBottom="@dimen/_2sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:textColor="@color/colorPrimary"
+    android:text="Beneficiary Name"/>
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/txt2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rectcolour"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="left|center"
+                android:hint="Beneficiary Name "
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/back_bg"
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"
+                android:text="Bank Name "/>
+            <EditText
+                android:id="@+id/bankName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/txt2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rectcolour"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="left|center"
+                android:hint="Bank Name "
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/back_bg"
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"
+                android:text="Branch Name "/>
+            <EditText
+                android:id="@+id/branch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/txt2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rectcolour"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="left|center"
+                android:hint="Branch Name "
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/back_bg"
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"
+                android:text="Account Number "/>
+            <EditText
+                android:id="@+id/accountNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/txt2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rectcolour"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="left|center"
+                android:hint="Account Number "
+                android:inputType="number"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/back_bg"
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"
+                android:text="IFSC Code "/>
+            <EditText
+                android:id="@+id/IfscCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/txt2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rectcolour"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="left|center"
+                android:hint="IFSC"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/back_bg"
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"
+                android:text="UPI "/>
+            <EditText
+                android:id="@+id/upi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/txt2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rectcolour"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="left|center"
+                android:hint="UPI "
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/back_bg"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/Camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:drawableLeft="@drawable/ic_ar_camera"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Camera"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/otp_ed"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/rzp_green_button"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Save Account Detail"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/ll_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/startdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/calendar_today"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/light_grey"
+                    android:focusable="false"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:hint="Start Date"
+                    android:inputType="number"
+                    android:paddingLeft="16.3dp"
+                    android:paddingTop="9.7dp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="9.7dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/enddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/calendar_today"
+                    android:drawablePadding="@dimen/_10sdp"
+
+                    android:drawableTint="@color/light_grey"
+                    android:focusable="false"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:hint="End Date"
+                    android:inputType="number"
+                    android:paddingLeft="16.3dp"
+                    android:paddingTop="9.7dp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="9.7dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+<!--      <LinearLayout-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:orientation="vertical"-->
+<!--          >-->
+<!--          <androidx.recyclerview.widget.RecyclerView-->
+<!--              android:layout_width="match_parent"-->
+<!--              android:layout_height="wrap_content"-->
+<!--              android:id="@+id/recycleleave"-->
+<!--              />-->
+
+<!--      </LinearLayout>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

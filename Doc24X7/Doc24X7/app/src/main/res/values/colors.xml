@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008037</color>
+    <color name="colorPrimaryDark">#7ed957</color>
+    <color name="colorAccent">#5778CC</color>
+    <color name="button_color">#315DCC</color>
+    <color name="textcolor">#01421D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whitep">#FAFAFA</color>
+    <color name="colorBackground">#D8D8D8</color>
+    <color name="light_grey">#787878</color>
+    <color name="green">#2C8015</color>
+    <color name="appColor">#008037</color>
+    <color name="yallow">#FECC19</color>
+    <color name="red">#D10505</color>
+    <color name="back_bg">#707070</color>
+    <color name="background">#757575</color>
+    <color name="black">#000000</color>
+    <color name="lohoyint">#E3E3E3</color>
+    <color name="blackdask">#7E7E7E</color>
+    <color name="blue">#023AFD</color>
+    <color name="deeppurple">#023AFD</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="grey">#646363</color>
+    <color name="pressed">#868585</color>
+    <color name="purple">#490ea7</color>
+    <color name="agora_blue">#2196F3</color>
+    <color name="dark_black">#0E0C0C</color>
+    <color name="pink_dark">#2196F3</color>
+    <color name="yellow">#FFEB3B</color>
+
+
+</resources>

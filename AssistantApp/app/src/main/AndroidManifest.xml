@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.doc24x7.assistant">
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon,android:allowBackup">
+        <activity android:name="com.doc24x7.assistant.Dashbord.ui.ViewReport"></activity>
+        <activity android:name="com.doc24x7.assistant.Dashbord.ui.UploadImagePrescription" />
+
+        <service
+            android:name="com.doc24x7.assistant.Dashbord.ui.StatusServices"
+            android:stopWithTask="false" />
+        <activity android:name=".PatientDetail"/>
+        <activity android:name=".Appointment.DOctoeByIdActivityOffline"/>
+
+        <activity
+            android:name=".PaymentGateway.ui.PaymentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:theme="@style/AppThemepopp"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.doc24x7.assistant.ShowleaveActivity" />
+        <activity android:name="com.doc24x7.assistant.Chat.ui.ManualPrescription" />
+        <activity android:name="com.doc24x7.assistant.Dashbord.ui.chooseprescription" />
+        <activity android:name="com.doc24x7.assistant.Chat.ui.PreviewPrescription" />
+
+        <activity
+            android:name="com.doc24x7.assistant.DoctorDashboad.DOctoeByIdActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.doc24x7.assistant.Dashbord.ui.DoctorDetailActivity" />
+
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_RSaNE7T0U1My4g" />
+
+        <activity
+            android:name="com.doc24x7.assistant.Chat.ui.UploadPrescriptionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.doc24x7.assistant.Splash.ui.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.doc24x7.assistant.Dashbord.ui.ViewTransaction"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.doc24x7.assistant.Login.ui.OtpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:label=""
+            android:theme="@style/AppThemepopp"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.doc24x7.assistant.Login.ui.OtpActivityNotRegister"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.doc24x7.assistant.DoctorDashboad.AccountDetailScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.doc24x7.assistant.DoctorDashboad.QualificationScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.doc24x7.assistant.Dashbord.ui.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doc24x7.assistant.Dashbord.ui.ViewPriscription"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doc24x7.assistant.Login.ui.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:label=""
+            android:theme="@style/BottomSheetDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.doc24x7.assistant.Splash.ui.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.doc24x7.assistant.Utils.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyArA_Vr8715j1BIYIEC-8vm5MC77Yv9Tws" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service android:name="com.doc24x7.assistant.Notification.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.doc24x7.assistant.Notification.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- Incoming call -->
+        <service android:name="com.doc24x7.assistant.Notification.service.HeadsUpNotificationService" />
+
+        <receiver
+            android:name="com.doc24x7.assistant.Notification.service.CallNotificationActionReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="999">
+                <action android:name="ConstantApp.CALL_RECEIVE_ACTION" />
+                <action android:name="ConstantApp.CALL_CANCEL_ACTION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

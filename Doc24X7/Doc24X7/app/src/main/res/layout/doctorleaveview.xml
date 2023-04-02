@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:elevation="1dp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/nameofday"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_3sdp"
+        android:paddingRight="@dimen/_3sdp"
+        android:text=""
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:fontFamily="@font/proximanovaregular"
+        android:textColor="@color/red"
+        android:textSize="14dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"></CheckBox>
+
+
+        <TextView
+            android:id="@+id/leave_date"
+            android:layout_toRightOf="@+id/checkbox"
+            android:visibility="visible"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:fontFamily="@font/apple_sd_gothic_neo_light"
+            android:gravity="right"
+             android:padding="10dp"
+            android:text="dfddgdggrgrgrgrgrg"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"/>
+
+
+        <TextView
+            android:id="@+id/Apponiment"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/leave_date"
+            android:layout_toLeftOf="@+id/remove"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:text="jbjbjj"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/apple_sd_gothic_neo_light"
+             android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:id="@+id/edit"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_toLeftOf="@id/remove"
+            android:visibility="invisible"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_height="@dimen/_20sdp"/>
+
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_width="@dimen/_15sdp"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"
+            android:src="@drawable/deleteiiii" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

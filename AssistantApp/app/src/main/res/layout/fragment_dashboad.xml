@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Dashbord.ui.DashboadFragment">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/detailuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="@dimen/_2sdp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_40sdp"
+                android:id="@+id/piclayout"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp"
+                app:srcCompat="@drawable/operator_circle"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/userpic"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/customer_support"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/black"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/Logout"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/piclayout"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_28sdp"
+                    android:text="name name name name  "
+                    android:id="@+id/name"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:gravity="left"
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 85858588 "
+                    android:id="@+id/contentnumber"
+                    android:textColor="@color/white"
+                    android:fontFamily="serif"
+                    android:gravity="left"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:id="@+id/Logout"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Logout  "
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:gravity="left"
+                    android:textSize="@dimen/_11sdp" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/chatbanner"></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/updateQuaification"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Update Qualification"
+                android:textColor="@color/white"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center"
+                android:layout_margin="@dimen/_3sdp"
+                android:background="@drawable/corner_rec"
+                android:textSize="@dimen/_13sdp"/>
+            <TextView
+                android:id="@+id/updateAccDetail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Update Account Detail"
+                android:layout_margin="@dimen/_3sdp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/corner_rec"
+                android:textSize="@dimen/_13sdp"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_30sdp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_rec"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="@dimen/_8sdp"
+            android:layout_margin="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor App."
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:background="@color/pressed"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:id="@+id/doctorappointment"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/green_back"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/PatientAppointment_li"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:elevation="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today's Online\nAppointement"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/PatientAppointment"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/viewallapointmentback"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/PatientAppointment_li_offline"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_8sdp"
+            android:elevation="@dimen/_5sdp"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today's OnClinic\nAppointement"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/PatientAppointment_offline"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:orientation="vertical"
+        android:gravity="center"
+
+     >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/green_back"
+            android:elevation="@dimen/_5sdp"
+            android:gravity="center"
+            android:id="@+id/addappointment"
+            android:orientation="horizontal"
+            android:padding="@dimen/_7sdp"
+            android:weightSum="5">
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:orientation="vertical"
+                 android:layout_weight="1"
+                 android:paddingStart="@dimen/_10sdp"
+                 android:layout_height="wrap_content">
+                 <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_width="@dimen/_38sdp"
+                     android:layout_height="@dimen/_38sdp"
+                     android:layout_centerInParent="true"
+                     android:padding="@dimen/_4sdp"
+                     android:layout_centerHorizontal="true"
+                     android:layout_centerVertical="true"
+                     android:layout_weight="1.5"
+
+                     android:background="@drawable/bacgroundcircularwhite"
+                     android:src="@drawable/add"
+
+                     />
+             </LinearLayout>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.8"
+                android:textStyle="bold"
+                android:text="Add New Appointment"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/TotalPatient_li"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/viewallapointmentback"
+            android:elevation="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_7sdp"
+            android:weightSum="5">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1.5"
+                    app:civ_border_width="1sp"
+                    app:civ_border_color="#26e07f"
+                    android:background="@drawable/bacgroundcircularwhite"
+                    android:src="@drawable/viewappointment"
+                    />
+            </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="0dp"
+         android:layout_weight="3.8"
+         android:orientation="horizontal"
+         android:layout_gravity="center"
+         android:layout_height="wrap_content"
+         >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="      My Total Patient    :    "
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+         <TextView
+             android:id="@+id/TotalPatient"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+
+             android:text="0"
+             android:textAlignment="center"
+             android:textColor="@color/white"
+             android:textSize="@dimen/_14sdp" />
+
+     </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/viewappontment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_weight="1"
+
+            android:background="@drawable/white_rec"
+            android:elevation="@dimen/_2sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            android:padding="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Total online\nPatient"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_13sdp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/white_rec"
+            android:id="@+id/comission_li"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:elevation="@dimen/_2sdp"
+            android:layout_margin="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Comission"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_13sdp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:id="@+id/comission"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/white_rec"
+            android:layout_weight="1"
+            android:id="@+id/income_li"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:elevation="@dimen/_2sdp"
+            android:layout_margin="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Income"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_13sdp"/>
+
+
+            <TextView
+                android:id="@+id/income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="0"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="online"
+        android:textSize="@dimen/_11sdp"
+        android:id="@+id/tvonline"
+        android:textAlignment="center"
+        />
+        <Switch
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sw_status"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+   </ScrollView>
+</FrameLayout>

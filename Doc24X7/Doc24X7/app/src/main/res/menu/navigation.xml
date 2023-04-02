@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_line"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/offline"
+        android:icon="@drawable/ic_user_off"
+        android:title="Avl Offline" />
+
+    <item
+        android:id="@+id/Appointmenthistory"
+         android:icon="@drawable/ic_user_on"
+        android:title="Avl Online" />
+
+    <item
+        android:id="@+id/Setting"
+        android:icon="@drawable/ic_nut"
+        android:title="Profile" />
+
+
+</menu>

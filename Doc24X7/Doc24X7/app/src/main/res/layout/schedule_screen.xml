@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<TextView
+    android:id="@+id/morming"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    android:drawableLeft="@drawable/ic_sunrise"
+    android:gravity="center"
+    android:drawablePadding="@dimen/_10sdp"
+    android:padding="@dimen/_10sdp"
+    android:text="Morning (7 slots)"
+    />
+    <LinearLayout
+        android:id="@+id/lv_morningslot"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/morming"/>
+    <TextView
+        android:id="@+id/afternoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_sunset"
+        android:gravity="center"
+        android:layout_below="@+id/lv_morningslot"
+        android:drawablePadding="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="Afternoon (7 slots)"
+        />
+    <LinearLayout
+        android:id="@+id/lv_afternoon"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/afternoon"/>
+    <TextView
+        android:id="@+id/eve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_sunset"
+        android:gravity="center"
+        android:layout_below="@+id/lv_afternoon"
+        android:drawablePadding="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="Afternoon (7 slots)"
+        />
+</RelativeLayout>

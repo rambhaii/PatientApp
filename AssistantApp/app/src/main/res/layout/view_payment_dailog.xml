@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_margin="@dimen/_20sdp"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:layout_marginTop="@dimen/_5sdp"
+
+    android:text="Please Select Payment\nMethod"
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="@dimen/_15sdp"
+    android:textStyle="bold"
+    />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectpayment"
+
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash On Clinic"
+            android:id="@+id/cod"
+            android:layout_margin="@dimen/_10sdp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Online Payment"
+            android:id="@+id/online"
+            android:layout_marginStart="@dimen/_8sdp"
+            />
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_15sdp"
+        >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_right"
+        android:tint="@color/white"
+        android:visibility="gone"
+        android:id="@+id/payamount"
+        android:padding="@dimen/_10sdp"
+
+        android:background="@drawable/btnsendiconback"
+        />
+    </LinearLayout>
+</LinearLayout>
